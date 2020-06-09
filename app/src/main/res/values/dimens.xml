@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pokemon_item_img_size">64dp</dimen>
+    <dimen name="pokemon_item_text_height">32dp</dimen>
+</resources>

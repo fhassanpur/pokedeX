@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e5493b</color>
+    <color name="colorPrimaryDark">#c43833</color>
+    <color name="colorAccent">#3bd7e5</color>
+    <color name="colorPokedexSeparator">#ccc</color>
+</resources>
