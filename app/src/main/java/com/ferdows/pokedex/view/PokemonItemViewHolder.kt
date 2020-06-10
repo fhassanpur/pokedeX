@@ -1,5 +1,6 @@
 package com.ferdows.pokedex.view
 
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
@@ -18,6 +19,14 @@ class PokemonItemViewHolder(
             .fitCenter()
             .transition(DrawableTransitionOptions.withCrossFade())
             .into(binding.itemPokemonImg)
+        binding.itemPokemonCard.setOnClickListener {
+            openPokemon(pokemon)
+        }
+    }
+
+    fun openPokemon(pokemon: Pokemon) {
+        val action = PokedexFragmentDirections.actionPokedexFragmentToPokemonFragment(pokemon)
+        binding.root.findNavController().navigate(action)
     }
 
 }

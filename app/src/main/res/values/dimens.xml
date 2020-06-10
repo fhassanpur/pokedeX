@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="very_small_margin">8sp</dimen>
+    <dimen name="small_margin">12dp</dimen>
+    <dimen name="medium_margin">24dp</dimen>
     <dimen name="pokemon_item_img_size">64dp</dimen>
     <dimen name="pokemon_item_text_height">32dp</dimen>
 </resources>

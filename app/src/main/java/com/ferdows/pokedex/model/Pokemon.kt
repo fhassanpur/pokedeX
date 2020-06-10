@@ -1,15 +1,17 @@
 package com.ferdows.pokedex.model
 
+import android.os.Parcelable
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import kotlinx.android.parcel.Parcelize
 
-@JsonClass(generateAdapter = true)
+@JsonClass(generateAdapter = true) @Parcelize
 data class PokemonEvolution(
     val num: String,
     val name: String
-)
+) : Parcelable
 
-@JsonClass(generateAdapter = true)
+@JsonClass(generateAdapter = true) @Parcelize
 data class Pokemon(
     val id: Int,
     val num: String,
@@ -28,4 +30,4 @@ data class Pokemon(
     val weaknesses: List<String>,
     @Json(name = "prev_evolution") val prevEvolutions: List<PokemonEvolution>?,
     @Json(name = "next_evolution") val nextEvolutions: List<PokemonEvolution>?
-)
+) : Parcelable

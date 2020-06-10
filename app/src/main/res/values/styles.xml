@@ -15,9 +15,16 @@
     </style>
 
     <style name="pokemon_name">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">22sp</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="fontFamily">sans-serif</item>
+    </style>
+
+    <style name="element_type">
+        <item name="android:background">@drawable/element_type_bg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">sans-serif-medium</item>
     </style>
 
 </resources>
